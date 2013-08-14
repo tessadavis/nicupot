@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  fat: 9.99
+  vita: 9.99
+  vitd: 9.99
+  vite: 9.99
+  vitk: 9.99
+  vitb1: 9.99
+  vitb2: 9.99
+  vitb3: 9.99
+  vitb5: 9.99
+  vitb6: 9.99
+  vitb12: 9.99
+  biot: 9.99
+  vitc: 9.99
+  fol: 9.99
+
+two:
+  name: MyString
+  fat: 9.99
+  vita: 9.99
+  vitd: 9.99
+  vite: 9.99
+  vitk: 9.99
+  vitb1: 9.99
+  vitb2: 9.99
+  vitb3: 9.99
+  vitb5: 9.99
+  vitb6: 9.99
+  vitb12: 9.99
+  biot: 9.99
+  vitc: 9.99
+  fol: 9.99

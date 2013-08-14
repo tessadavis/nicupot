@@ -1,0 +1,91 @@
+<h1>Listing ebms</h1>
+
+<table>
+  <tr>
+    <th>Kcal</th>
+    <th>Prot</th>
+    <th>Cho</th>
+    <th>Fat</th>
+    <th>Sod</th>
+    <th>Pot</th>
+    <th>Calc</th>
+    <th>Phos</th>
+    <th>Iron</th>
+    <th>Zinc</th>
+    <th>Copp</th>
+    <th>Mang</th>
+    <th>Mag</th>
+    <th>Chlor</th>
+    <th>Iod</th>
+    <th>Vita</th>
+    <th>Vitb1</th>
+    <th>Vitb2</th>
+    <th>Vitb3</th>
+    <th>Vitb5</th>
+    <th>Vitb6</th>
+    <th>Vitc</th>
+    <th>Vitd</th>
+    <th>Vitb12</th>
+    <th>Vitb7</th>
+    <th>Vite</th>
+    <th>Vitk</th>
+    <th>Chol</th>
+    <th>Fol</th>
+    <th>Biot</th>
+    <th>Fibre</th>
+    <th>Dha</th>
+    <th>Linol</th>
+    <th>Selen</th>
+    <th>Osm</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ebms.each do |ebm| %>
+  <tr>
+    <td><%= ebm.kcal %></td>
+    <td><%= ebm.prot %></td>
+    <td><%= ebm.cho %></td>
+    <td><%= ebm.fat %></td>
+    <td><%= ebm.sod %></td>
+    <td><%= ebm.pot %></td>
+    <td><%= ebm.calc %></td>
+    <td><%= ebm.phos %></td>
+    <td><%= ebm.iron %></td>
+    <td><%= ebm.zinc %></td>
+    <td><%= ebm.copp %></td>
+    <td><%= ebm.mang %></td>
+    <td><%= ebm.mag %></td>
+    <td><%= ebm.chlor %></td>
+    <td><%= ebm.iod %></td>
+    <td><%= ebm.vita %></td>
+    <td><%= ebm.vitb1 %></td>
+    <td><%= ebm.vitb2 %></td>
+    <td><%= ebm.vitb3 %></td>
+    <td><%= ebm.vitb5 %></td>
+    <td><%= ebm.vitb6 %></td>
+    <td><%= ebm.vitc %></td>
+    <td><%= ebm.vitd %></td>
+    <td><%= ebm.vitb12 %></td>
+    <td><%= ebm.vitb7 %></td>
+    <td><%= ebm.vite %></td>
+    <td><%= ebm.vitk %></td>
+    <td><%= ebm.chol %></td>
+    <td><%= ebm.fol %></td>
+    <td><%= ebm.biot %></td>
+    <td><%= ebm.fibre %></td>
+    <td><%= ebm.dha %></td>
+    <td><%= ebm.linol %></td>
+    <td><%= ebm.selen %></td>
+    <td><%= ebm.osm %></td>
+    <td><%= link_to 'Show', ebm %></td>
+    <td><%= link_to 'Edit', edit_ebm_path(ebm) %></td>
+    <td><%= link_to 'Destroy', ebm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ebm', new_ebm_path %>

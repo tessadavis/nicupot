@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  aman: 9.99
+  dex: 9.99
+  sod: 9.99
+  pot: 9.99
+  calc: 9.99
+  mag: 9.99
+  phos: 9.99
+  chlor: 9.99
+  acet: 9.99
+  zinc: 9.99
+  selen: 9.99
+  iod: 9.99
+  hep: 9.99
+
+two:
+  name: MyString
+  aman: 9.99
+  dex: 9.99
+  sod: 9.99
+  pot: 9.99
+  calc: 9.99
+  mag: 9.99
+  phos: 9.99
+  chlor: 9.99
+  acet: 9.99
+  zinc: 9.99
+  selen: 9.99
+  iod: 9.99
+  hep: 9.99

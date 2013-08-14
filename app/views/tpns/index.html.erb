@@ -1,0 +1,49 @@
+<h1>Listing tpns</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Aman</th>
+    <th>Dex</th>
+    <th>Sod</th>
+    <th>Pot</th>
+    <th>Calc</th>
+    <th>Mag</th>
+    <th>Phos</th>
+    <th>Chlor</th>
+    <th>Acet</th>
+    <th>Zinc</th>
+    <th>Selen</th>
+    <th>Iod</th>
+    <th>Hep</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tpns.each do |tpn| %>
+  <tr>
+    <td><%= tpn.name %></td>
+    <td><%= tpn.aman %></td>
+    <td><%= tpn.dex %></td>
+    <td><%= tpn.sod %></td>
+    <td><%= tpn.pot %></td>
+    <td><%= tpn.calc %></td>
+    <td><%= tpn.mag %></td>
+    <td><%= tpn.phos %></td>
+    <td><%= tpn.chlor %></td>
+    <td><%= tpn.acet %></td>
+    <td><%= tpn.zinc %></td>
+    <td><%= tpn.selen %></td>
+    <td><%= tpn.iod %></td>
+    <td><%= tpn.hep %></td>
+    <td><%= link_to 'Show', tpn %></td>
+    <td><%= link_to 'Edit', edit_tpn_path(tpn) %></td>
+    <td><%= link_to 'Destroy', tpn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tpn', new_tpn_path %>

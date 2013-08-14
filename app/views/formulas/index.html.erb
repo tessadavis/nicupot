@@ -1,0 +1,95 @@
+<h1>Listing formulas</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Kcal</th>
+    <th>Prot</th>
+    <th>Cho</th>
+    <th>Fat</th>
+    <th>Sod</th>
+    <th>Pot</th>
+    <th>Calc</th>
+    <th>Chlor</th>
+    <th>Phos</th>
+    <th>Mag</th>
+    <th>Iron</th>
+    <th>Zinc</th>
+    <th>Mang</th>
+    <th>Copp</th>
+    <th>Iod</th>
+    <th>Vita</th>
+    <th>Vitb1</th>
+    <th>Vitb2</th>
+    <th>Vitb3</th>
+    <th>Vitb5</th>
+    <th>Vitb6</th>
+    <th>Vitc</th>
+    <th>Vitd</th>
+    <th>Vitb12</th>
+    <th>Vitb7</th>
+    <th>Vite</th>
+    <th>Vitk</th>
+    <th>Chol</th>
+    <th>Fol</th>
+    <th>Biot</th>
+    <th>Fibre</th>
+    <th>Aman</th>
+    <th>Dha</th>
+    <th>Linol</th>
+    <th>Selen</th>
+    <th>Osm</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @formulas.each do |formula| %>
+  <tr>
+    <td><%= formula.name %></td>
+    <td><%= formula.kcal %></td>
+    <td><%= formula.prot %></td>
+    <td><%= formula.cho %></td>
+    <td><%= formula.fat %></td>
+    <td><%= formula.sod %></td>
+    <td><%= formula.pot %></td>
+    <td><%= formula.calc %></td>
+    <td><%= formula.chlor %></td>
+    <td><%= formula.phos %></td>
+    <td><%= formula.mag %></td>
+    <td><%= formula.iron %></td>
+    <td><%= formula.zinc %></td>
+    <td><%= formula.mang %></td>
+    <td><%= formula.copp %></td>
+    <td><%= formula.iod %></td>
+    <td><%= formula.vita %></td>
+    <td><%= formula.vitb1 %></td>
+    <td><%= formula.vitb2 %></td>
+    <td><%= formula.vitb3 %></td>
+    <td><%= formula.vitb5 %></td>
+    <td><%= formula.vitb6 %></td>
+    <td><%= formula.vitc %></td>
+    <td><%= formula.vitd %></td>
+    <td><%= formula.vitb12 %></td>
+    <td><%= formula.vitb7 %></td>
+    <td><%= formula.vite %></td>
+    <td><%= formula.vitk %></td>
+    <td><%= formula.chol %></td>
+    <td><%= formula.fol %></td>
+    <td><%= formula.biot %></td>
+    <td><%= formula.fibre %></td>
+    <td><%= formula.aman %></td>
+    <td><%= formula.dha %></td>
+    <td><%= formula.linol %></td>
+    <td><%= formula.selen %></td>
+    <td><%= formula.osm %></td>
+    <td><%= link_to 'Show', formula %></td>
+    <td><%= link_to 'Edit', edit_formula_path(formula) %></td>
+    <td><%= link_to 'Destroy', formula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Formula', new_formula_path %>

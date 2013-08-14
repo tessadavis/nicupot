@@ -1,0 +1,73 @@
+<%= form_for(@tpn) do |f| %>
+  <% if @tpn.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tpn.errors.count, "error") %> prohibited this tpn from being saved:</h2>
+
+      <ul>
+      <% @tpn.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :aman %><br />
+    <%= f.text_field :aman %>
+  </div>
+  <div class="field">
+    <%= f.label :dex %><br />
+    <%= f.text_field :dex %>
+  </div>
+  <div class="field">
+    <%= f.label :sod %><br />
+    <%= f.text_field :sod %>
+  </div>
+  <div class="field">
+    <%= f.label :pot %><br />
+    <%= f.text_field :pot %>
+  </div>
+  <div class="field">
+    <%= f.label :calc %><br />
+    <%= f.text_field :calc %>
+  </div>
+  <div class="field">
+    <%= f.label :mag %><br />
+    <%= f.text_field :mag %>
+  </div>
+  <div class="field">
+    <%= f.label :phos %><br />
+    <%= f.text_field :phos %>
+  </div>
+  <div class="field">
+    <%= f.label :chlor %><br />
+    <%= f.text_field :chlor %>
+  </div>
+  <div class="field">
+    <%= f.label :acet %><br />
+    <%= f.text_field :acet %>
+  </div>
+  <div class="field">
+    <%= f.label :zinc %><br />
+    <%= f.text_field :zinc %>
+  </div>
+  <div class="field">
+    <%= f.label :selen %><br />
+    <%= f.text_field :selen %>
+  </div>
+  <div class="field">
+    <%= f.label :iod %><br />
+    <%= f.text_field :iod %>
+  </div>
+  <div class="field">
+    <%= f.label :hep %><br />
+    <%= f.text_field :hep %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

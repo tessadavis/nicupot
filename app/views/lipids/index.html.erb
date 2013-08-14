@@ -1,0 +1,51 @@
+<h1>Listing lipids</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Fat</th>
+    <th>Vita</th>
+    <th>Vitd</th>
+    <th>Vite</th>
+    <th>Vitk</th>
+    <th>Vitb1</th>
+    <th>Vitb2</th>
+    <th>Vitb3</th>
+    <th>Vitb5</th>
+    <th>Vitb6</th>
+    <th>Vitb12</th>
+    <th>Biot</th>
+    <th>Vitc</th>
+    <th>Fol</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lipids.each do |lipid| %>
+  <tr>
+    <td><%= lipid.name %></td>
+    <td><%= lipid.fat %></td>
+    <td><%= lipid.vita %></td>
+    <td><%= lipid.vitd %></td>
+    <td><%= lipid.vite %></td>
+    <td><%= lipid.vitk %></td>
+    <td><%= lipid.vitb1 %></td>
+    <td><%= lipid.vitb2 %></td>
+    <td><%= lipid.vitb3 %></td>
+    <td><%= lipid.vitb5 %></td>
+    <td><%= lipid.vitb6 %></td>
+    <td><%= lipid.vitb12 %></td>
+    <td><%= lipid.biot %></td>
+    <td><%= lipid.vitc %></td>
+    <td><%= lipid.fol %></td>
+    <td><%= link_to 'Show', lipid %></td>
+    <td><%= link_to 'Edit', edit_lipid_path(lipid) %></td>
+    <td><%= link_to 'Destroy', lipid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lipid', new_lipid_path %>
