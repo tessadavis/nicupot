@@ -2,16 +2,16 @@ ActiveAdmin.register Formula do
 	index do  
 	column :name
 	column :aman                         
-    column :biotin
+    column :biot
     column :calc
     column :chlor
     column :cho
-    column :choline
+    column :chol
     column :copp
     column :dha
     column :fat
     column :fibre
-    column :folate  
+    column :fol 
     column :iod
     column :iron
     column :kcal

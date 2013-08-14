@@ -2,9 +2,9 @@ ActiveAdmin.register Lipid do
 
 	index do  
 	column :name                           
-    column :biotin
+    column :biot
     column :fat
-    column :folate            
+    column :fol           
     column :vita
     column :vitb1  
     column :vitb12
